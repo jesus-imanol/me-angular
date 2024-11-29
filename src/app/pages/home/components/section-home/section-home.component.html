@@ -1,0 +1,43 @@
+<section class="hero bg-gray-950 flex flex-col w-full justify-center items-center h-screen">
+    <div>
+      <h1 class="text-2xl font-bold text-[#0053D9]">
+        Hello expect
+      </h1>
+      <h1 class="text-4xl font-bold text-[#0053D9]" appScrollAnimation>
+        I'm <span class="text-white">Jesus Cast</span>
+      </h1>
+      <div class="flex flex-col w-full max-w-7xl items-center">
+        <img src="assets/icon_me.svg" alt="" appScrollAnimation />
+      </div>
+    </div>
+  </section>
+  <section class="bg-gray-950 flex items-center h-screen flex-col">
+    <div class="flex flex-col w-full max-w-7xl items-center">
+      <p class="text-white text-[20px] text-center font-inter font-extrabold" appScrollAnimation>
+        I’m developer full stack, I lonely <br>of nice to meet you
+      </p>
+    </div>
+    <div class="flex flex-col w-full max-w-7xl items-center mt-9">
+
+      <p class="text-blue-600 text-[24px] text-center font-inter font-extrabold" appScrollAnimation>
+        This is my frameworks web
+      </p>
+    </div>
+    <div class="flex flex-col w-full max-w-7xl items-center mt-9 gap-8" appScrollAnimation>
+      <app-card-frameworks *ngFor="let framework of listFrameworks" [framework]="framework"></app-card-frameworks>
+    </div>
+    <div class="flex flex-col w-full max-w-7xl items-center mt-9 gap-8" appScrollAnimation>
+      <p class="text-blue-600 text-[24px] text-center font-inter font-extrabold">
+        Category now
+      </p>
+    </div>
+    <div class="flex flex-col w-full max-w-7xl items-center mt-9 gap-8 h-[30vh] bg-gray-950 " appScrollAnimation >
+        <div class="group origin-bottom-right duration-500 -rotate-12 hover:-rotate-0 hover:-skew-x-12 skew-x-0 hover:-translate-x-6  hover:translate-y-12 h-[40vh] ">
+            <div class="duration-500 group-hover:duration-400 relative rounded-2xl w-64 h-36 bg-zinc-800 text-gray-50 flex flex-col justify-center items-center gap-1 before:-skew-x-12  before:rounded-2xl  before:absolute before:content['']  before:bg-neutral-700 before:right-3 before:top-0 before:w-64 before:h-32 before:-z-10 group-hover:before:-right-3 group-hover:before:skew-x-12 before:duration-500 group-hover:duration-500">
+              <span class="text-5xl font-bold">Jr</span>
+              <p class="text-amber-300 font-thin">- Frontend Developer -</p>
+            </div>
+          </div>
+    </div>
+  </section>
+  
